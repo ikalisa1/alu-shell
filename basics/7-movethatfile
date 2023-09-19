@@ -1,2 +1,2 @@
 #!/bin/bash
-betty mv /tmp/ /tmp/my_first_directory
+touch betty mv -i /tmp/tmp/my_first_directory
