@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -hR vincent:staff chgrp _hello .
+chown -h vincent:staff_hello
