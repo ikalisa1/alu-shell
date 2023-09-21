@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod go+x hello school
+chmod go+x school hello 
