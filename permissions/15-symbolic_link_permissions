@@ -1,2 +1,2 @@
 #!/bin/bash
-chgrp _hello -hR vincent:staff .
+chmod -hR vincent:staff chgrp _hello .
