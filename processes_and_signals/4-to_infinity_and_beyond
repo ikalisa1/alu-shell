@@ -3,7 +3,7 @@
 while
 	i=1
 do
-  echo "To infinity and beyond" %$i
+  echo "To infinity and beyond" 
   $i+1
   sleep 2
 done
