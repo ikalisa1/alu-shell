@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-#  Bash script that stops 4-to_infinity_and_beyond processprocess_name="4-to_infinity_and_beyond"
-pkill 4-to_infinity_and_beyond 
+#script to terminate 4_infinite_beyond
+pid=$(pgrep -f 4-to_infinity_and_beyond)
+kill "$pid"
