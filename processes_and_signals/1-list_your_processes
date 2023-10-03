@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 # script that diplays a list of currently running processes
-ps -u -c
+ps -e
+ps -ef
+ps -aox
+pstree
