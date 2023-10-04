@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
-# Bash script that displays"To infinity and beyond indefinitely"
-function sigterm_handler() {
-    echo "I am invincible!!!"
-    exit 0
-}
-
-# Register the SIGTERM handler
-trap 'sigterm_handler' SIGTERM
+# Bash script that displays"To infinity and beyond indefinite 
 
 while true; do
     echo "To infinity and beyond indefinitely"
     sleep 2
+    function sigterm_handler() {
+	        echo "I am invincible!!!"
+		    exit 0
+	    }
+
+    # Register the SIGTERM handler
+    trap 'sigterm_handler' SIGTERM
+
 done
