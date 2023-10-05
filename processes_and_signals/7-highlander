@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 # Bash script that displays"To infinity and beyond indefinit
-terminate() {
-	    echo "I am invincible!!!"
-	        exit 0
-	}
-
-# Register the terminate function to handle SIGTERM
-trap terminate SIGTERM
-
-# Loop indefinitely with a 2-second delay
-while true; do
-	    echo "To infinity and beyond indefinitely"
-	        sleep 2
-	done
+while :                                            
+do                                                 
+	        echo "To infinity and beyond"              
+		        sleep 2                                    
+			        trap 'echo "I am invincible!!!"' SIGTERM   
+			done 

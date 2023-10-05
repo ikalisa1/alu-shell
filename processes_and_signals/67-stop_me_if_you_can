@@ -1,18 +1,4 @@
 #!/usr/bin/env bash
+# script that stops 4-to_infinity_and_beyond process.
+pkill -f 4-to_infinity_and_beyond
 
-# Function to handle SIGTERM signal
-handle_sigterm() {
-    echo "I am invincible!!!"
-    # Kill the "7-highlander" process
-    pkill -TERM -f "7-highlander"
-    exit 0
-}
-
-# Register the handle_sigterm function to handle SIGTERM
-trap 'handle_sigterm' SIGTERM
-
-# Infinite loop
-while :; do
-    echo "To infinity and beyond indefinitely"
-    sleep 2
-done
